@@ -7,7 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [schItems, setSchItems] = useState(
-    JSON.parse(localStorage.getItem("schItems"))
+    JSON.parse(localStorage.getItem("schItems")) || []
   );
 
   localStorage.setItem("schItems", JSON.stringify(schItems));
