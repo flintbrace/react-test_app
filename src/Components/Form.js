@@ -1,11 +1,11 @@
 const Form = () => {
   return (
-    <form name="TestContact" method="POST" netlify className="testForm">
+    <form className="testForm">
       <input type="hidden" name="form-name" value="TestContact"></input>
       <label>First Name:</label>
-      <input type="text" name="First Name" />
+      <input type="text" name="FirstName" />
       <label>Last Name:</label>
-      <input type="text" name="Last Name" />
+      <input type="text" name="LastName" />
       <label>Email :</label>
       <input type="email" name="Email" />
       <label>Phone:</label>
