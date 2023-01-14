@@ -1,9 +1,10 @@
 import Header from "./Header";
-import AddItem from "./AddItem";
-import SearchItem from "./SearchItem";
+import AddItem from "./Components/AddItem";
+import SearchItem from "./Components/SearchItem";
 import Content from "./Content";
 import Footer from "./Footer";
 import { useState } from "react";
+import Form from "./Components/Form";
 
 function App() {
   const [schItems, setSchItems] = useState(
@@ -47,6 +48,7 @@ function App() {
         handleAddItem={handleAddItem}
       />
       <SearchItem searchItem={searchItem} setSearchItem={setSearchItem} />
+      <Form />
       <Content
         items={schItems.filter((tt) =>
           tt.title.toLowerCase().includes(searchItem.toLowerCase())

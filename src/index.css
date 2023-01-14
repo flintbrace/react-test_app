@@ -9,9 +9,9 @@ html {
 }
 
 .app {
-  max-width:700px;
+  max-width: 700px;
   min-height: 100vh;
-  margin-inline:auto;;
+  margin-inline: auto;
   display: flex;
   flex-flow: column;
 }
@@ -23,19 +23,19 @@ header {
 }
 
 .AddItem {
-  margin: .5rem;
+  margin: 0.5rem;
   display: flex;
 }
 
 .AddItem input {
   flex: 1;
-  padding: .2rem;
+  padding: 0.2rem;
   outline: none;
   border: 1px solid rgb(252, 186, 105);
 }
 
 .AddItem button {
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
   background-color: bisque;
   border: 1px solid rgb(252, 186, 105);
   outline: none;
@@ -45,13 +45,13 @@ header {
   cursor: pointer;
   background-color: rgb(253, 187, 105);
 }
-.SearchItem{
-  margin:0 .5rem;
+.SearchItem {
+  margin: 0 0.5rem;
 }
 
-.SearchItem input{
-  width:100%;
-  padding: .2rem;
+.SearchItem input {
+  width: 100%;
+  padding: 0.2rem;
   outline: none;
   border: 1px solid rgb(252, 186, 105);
 }
@@ -61,14 +61,14 @@ main {
 }
 
 ul {
-  padding: .5rem;
+  padding: 0.5rem;
   list-style: none;
   text-align: left;
 
   display: flex;
   flex-flow: column;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 ul li {
@@ -85,12 +85,12 @@ li input[type="checkbox"] {
   cursor: pointer;
 }
 
-li input:checked+label {
+li input:checked + label {
   text-decoration: line-through;
 }
 
 li button {
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   background-color: aliceblue;
   outline: none;
   border: 1px solid bisque;
@@ -101,10 +101,35 @@ li button:hover {
   background-color: aquamarine;
 }
 
-
-
 footer {
   background-color: aquamarine;
   padding: 1rem 0;
   text-align: center;
+}
+
+.testForm {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  margin-inline: auto;
+}
+
+.testForm label {
+  text-align: left;
+}
+.testForm input {
+  padding: 0.2rem;
+  outline: none;
+  border: 1px solid rgb(37, 130, 116);
+}
+
+.testForm button {
+  margin-top: 1rem;
+  padding: 0.2rem 1rem;
+  background-color: rgb(40, 171, 142);
+  border: 1px solid rgb(20, 105, 87);
+  outline: none;
 }

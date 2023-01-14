@@ -1,15 +1,15 @@
-import ItemLists from "./ItemLists"
+import ItemLists from "./Components/ItemLists";
 
 const Content = ({ items, handleCheck, handleDelete }) => {
-    return (
+  return (
+    <main>
+      <ItemLists
+        items={items}
+        handleCheck={handleCheck}
+        handleDelete={handleDelete}
+      />
+    </main>
+  );
+};
 
-        <main>
-            <ItemLists
-                items={items}
-                handleCheck={handleCheck}
-                handleDelete={handleDelete}/>
-        </main>
-    )
-}
-
-export default Content
+export default Content;
