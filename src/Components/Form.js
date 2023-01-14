@@ -1,11 +1,6 @@
 const Form = () => {
   return (
-    <form
-      name="TestContact"
-      method="POST"
-      data-netlify="true"
-      className="testForm"
-    >
+    <form name="TestContact" netlify className="testForm">
       <label>First Namee:</label>
       <input type="text" name="First Name" />
       <label>Last Name:</label>
